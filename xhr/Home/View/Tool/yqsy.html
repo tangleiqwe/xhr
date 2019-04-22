@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Tool/top" />
+    <style type="text/css">
+        .text-white {
+            color: #ffffff !important;
+        }
+        .aui-grid [class*=aui-col-] {
+            padding: 0.75rem 0;
+        }
+    </style>
+    <style type="text/css">
+        p {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+    <style type="text/css">
+        .aui-list-item.wechat-top {
+            background-color: #f3f3f7;
+        }
+        .aui-list .wechat-avatar {
+            width:3rem;
+        }
+        .wechat-avatar .aui-row-padded {
+            background-color: #dddee0;
+            padding: 0.1rem;
+            border-radius: 0.2rem;
+            margin-left: -0.05rem;
+            margin-right: -0.05rem;
+        }
+        .wechat-avatar .aui-row-padded [class*=aui-col-xs-] {
+            padding: 0.05rem;
+        }
+        .wechat-avatar,
+        .wechat-avatar > img {
+            border-radius:0.2rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 顶部 -->
+<include file="Tool/user_head" />
+
+<div class="aui-tab" id="tab">
+        <div class="aui-tab-item"  onclick="shouyi()">根据复投周数计算收益</div>
+        <div class="aui-tab-item aui-active" onclick="zhoushu()">根据收益计算复投周数</div>
+    </div>
+<div class="aui-content aui-margin-b-15">
+	<form action="__MODULE__/Tool/yqsy" method="get" onsubmit="return checkform(this)">
+    <ul class="aui-list aui-form-list">
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    投资金额(π)
+                </div>
+                <div class="aui-list-item-input">
+                    <input type="number" id="bjine" name="bjine" value="{$bjine}" placeholder="投资金额">
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    预期收益
+                </div>
+                <div class="aui-list-item-input">
+                    <input type="number" id="shouyi" name="shouyi" value="{$shouyi}" placeholder="预期收益">
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    开始日期
+                </div>
+                <div class="aui-list-item-input">
+                    <input type="date" id="sybegindate" name="sybegindate" value="{$sybegindate}" placeholder="开始日期">
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-label">
+                    兑换比例
+                </div>
+                <div class="aui-list-item-input">
+                    <input type="text" id="bili" name="bili" value="{$bili}" placeholder="兑换比例">
+                </div>
+            </div>
+        </li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner aui-list-item-center aui-list-item-btn">
+            	<button class="aui-btn aui-btn-primary aui-margin-l-5" type="submit">计算</button>
+                <!--<button class="aui-btn aui-btn-danger aui-margin-l-5" type="button" onClick="window.location.href='__MODULE__/Funding/{$href_index}';">返回</button>-->
+            </div>
+        </li>
+    </ul>
+    </form>
+</div>
+<?php
+if($noimg != 1){
+?>
+<div class="aui-content aui-margin-b-15">
+    <ul class="aui-list aui-form-list">
+        <li class="aui-list-header">计算结果</li>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner">
+                <img src="__PUBLIC__/tool/{$imgname}" width="800" height="" />
+            </div>
+        </li>
+        <?php
+        if($xiangxi != 1){
+        ?>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner aui-list-item-center aui-list-item-btn">
+            	<button class="aui-btn aui-btn-primary aui-margin-l-5" type="button" onclick="xiangxi()">查看详细数据</button>
+                <!--<button class="aui-btn aui-btn-danger aui-margin-l-5" type="button" onClick="window.location.href='__MODULE__/Funding/{$href_index}';">返回</button>-->
+            </div>
+        </li>
+        <?php
+        }else{
+        ?>
+        <li class="aui-list-item">
+            <div class="aui-list-item-inner aui-list-item-center aui-list-item-btn">
+                <button class="aui-btn aui-btn-primary aui-margin-l-5" type="button" onclick="jianyao()">查看简要数据</button>
+            </div>
+        </li>
+        <?php
+        }
+        ?>
+    </ul>
+</div>
+<?php
+}
+?>
+<include file="Funding/footer" />
+</body>
+
+<script type="text/javascript" src="__PUBLIC__/script/api.js" ></script>
+<script type="text/javascript">
+    apiready = function () {
+    }
+</script>
+
+<script type="text/javascript">
+function checkform(obj){
+	if(obj.bjine.value.length == 0){
+		alert('投资金额不能为空！');
+		return false;
+	}
+	if(obj.shouyi.value.length == 0){
+		alert('预期收益不能为空！');
+		return false;
+	}
+	if(obj.sybegindate.value.length == 0){
+		alert('开始投资时间不能为空！');
+		return false;
+	}
+}
+function shouyi(){
+	window.location.href= URL + '/index';
+}
+function zhoushu(){
+	window.location.href= URL + '/yqsy';
+}
+function xiangxi(){
+	//layer.alert('工程师正在火速开发中，敬请期待！',{icon: 6,title:'系统提示'});
+	window.location.href= URL + '/yqsy/bjine/{$bjine}/shouyi/{$shouyi}/sybegindate/{$sybegindate}/bili/{$bili}/xiangxi/1';
+}
+function jianyao(){
+	window.location.href= URL + '/yqsy/bjine/{$bjine}/shouyi/{$shouyi}/sybegindate/{$sybegindate}/bili/{$bili}';
+}
+</script>
+<script type="text/javascript" src="__PUBLIC__/js/jweixin-1.2.0.js" ></script>
+<script>
+var wx_title = '摸金客 - 摸金派复投计算工具';
+var wx_desc = '摸金客团队独创的摸金派复投计算工具';
+var wx_link = window.location.href;
+var wx_imgUrl = 'http://wap.tjtrds.com/Public/image/weixin_logo.png';
+
+wx.config({
+    debug: false,
+    appId: '<?php echo $signPackage["appId"];?>',
+    timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+    signature: '<?php echo $signPackage["signature"];?>',
+    jsApiList: [
+      // 所有要调用的 API 都要加到这个列表中
+	  "onMenuShareAppMessage",
+	  "onMenuShareTimeline",
+	  "onMenuShareQQ"
+    ]
+});
+
+wx.ready(function () {
+    // 在这里调用 API
+	wx.onMenuShareAppMessage({
+		title: wx_title, // 分享标题
+		desc: wx_desc, // 分享描述
+		link: wx_link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+		imgUrl: wx_imgUrl, // 分享图标
+		type: '', // 分享类型,music、video或link，不填默认为link
+		dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	
+	wx.onMenuShareTimeline({
+		title: wx_title, // 分享标题
+		link: wx_link, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+		imgUrl: wx_imgUrl, // 分享图标
+		success: function () { 
+			// 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+			// 用户取消分享后执行的回调函数
+		}
+	});
+	wx.onMenuShareQQ({
+		title: wx_title, // 分享标题
+		desc: wx_desc, // 分享描述
+		link: wx_link, // 分享链接
+		imgUrl: wx_imgUrl, // 分享图标
+		success: function () { 
+		   // 用户确认分享后执行的回调函数
+		},
+		cancel: function () { 
+		   // 用户取消分享后执行的回调函数
+		}
+	});
+});
+</script>
+</html>

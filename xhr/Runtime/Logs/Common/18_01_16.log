@@ -1,0 +1,12 @@
+[ 2018-01-16T12:21:06+08:00 ] 192.168.43.90 /xhr/Public/images/helppai/help_2_7.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000723s ]
+ERR: 无法加载模块:Public
+
+[ 2018-01-16T16:11:47+08:00 ] 192.168.0.101 /xhr/Public/upload/video/beiwa.mp4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000665s ]
+ERR: 无法加载模块:Public
+

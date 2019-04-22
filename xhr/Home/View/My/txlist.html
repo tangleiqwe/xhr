@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Tool/top" />
+</head>
+
+<body>
+
+<style>
+    .mui-control-content {
+        background-color: white;
+        min-height: 500px;
+    }
+    .mui-control-content .mui-loading {
+        margin-top: 50px;
+    }
+</style>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">提现记录</h1>
+</header>
+<include file="Tool/footer" />
+<div class="mui-content">
+    <ul class="mui-table-view mui-grid-view mui-grid-12" >
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-2" >
+            <span class="mui-icon-extra mui-icon-extra-outline" style="font-size: 15px; font-weight: bold; color: #2D93CA">单号</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-4" >
+            <span class="mui-icon-extra mui-icon-extra-calc" style="font-size: 15px; font-weight: bold; color: #2D93CA">时间</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3" >
+            <span class="mui-icon-extra mui-icon-extra-prech" style="font-size: 15px; font-weight: bold; color: #2D93CA">金额</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" >
+            <span class="mui-icon-extra mui-icon-extra-gold" style="font-size: 15px; font-weight: bold; color: #2D93CA">状态</span>
+        </li>
+    </ul>
+    <volist name="rmblist" id="vo">
+        <ul class="mui-table-view mui-grid-view mui-grid-12" >
+            <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-2" style="height: 40px">
+                <span class="" style="font-size: 14px">{$vo.id}</span>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-4" >
+                <span class="" style="font-size: 14px">{$vo.operdate}</span>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3" >
+                <span class="" style="font-size: 14px">{$vo.xjnum}</span>
+            </li>
+            <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3" >
+                <?php
+                                        if($vo['type'] == '1'){
+                                        ?>
+                <span class="mui-icon-extra mui-icon-extra-cart" style="font-size: 14px; color:#4cd964"> 提交</span>
+                <?php }else {?>
+                <span class="mui-icon-extra mui-icon-extra-class" style="font-size: 14px; color:#ff8000"> 完成</span>
+                <?php }?>
+            </li>
+        </ul>
+    </volist>
+
+</div>
+<script>
+
+    mui.init({
+        swipeBack: false
+    });
+
+    (function($) {
+        $('.mui-scroll-wrapper').scroll({
+            indicators: true //是否显示滚动条
+        });
+        /*var html2 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第二个选项卡子项-1</li><li class="mui-table-view-cell">第二个选项卡子项-2</li><li class="mui-table-view-cell">第二个选项卡子项-3</li><li class="mui-table-view-cell">第二个选项卡子项-4</li><li class="mui-table-view-cell">第二个选项卡子项-5</li></ul>';
+         //        var html3 = '<ul class="mui-table-view"><li class="mui-table-view-cell">第三个选项卡子项-1</li><li class="mui-table-view-cell">第三个选项卡子项-2</li><li class="mui-table-view-cell">第三个选项卡子项-3</li><li class="mui-table-view-cell">第三个选项卡子项-4</li><li class="mui-table-view-cell">第三个选项卡子项-5</li></ul>';
+         var item2 = document.getElementById('item2mobile');
+         //        var item3 = document.getElementById('item3mobile');
+         document.getElementById('slider').addEventListener('slide', function(e) {
+         if (e.detail.slideNumber === 1) {
+         if (item2.querySelector('.mui-loading')) {
+         setTimeout(function() {
+         item2.querySelector('.mui-scroll').innerHTML = html2;
+         }, 500);
+         }
+         }
+         });*/
+
+    })(mui);
+</script>
+
+</body>
+
+</html>

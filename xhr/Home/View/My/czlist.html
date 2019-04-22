@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Tool/top" />
+</head>
+
+<body>
+
+<style>
+    .mui-control-content {
+        background-color: white;
+        min-height: 500px;
+    }
+    .mui-control-content .mui-loading {
+        margin-top: 50px;
+    }
+</style>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">充值记录</h1>
+</header>
+<include file="Tool/footer" />
+<div class="mui-content">
+    <ul class="mui-table-view mui-grid-view mui-grid-12" >
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-2" >
+            <span class="mui-icon-extra mui-icon-extra-outline" style="font-size: 15px; font-weight: bold; color: #2D93CA">单号</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-4" >
+            <span class="mui-icon-extra mui-icon-extra-calc" style="font-size: 15px; font-weight: bold; color: #2D93CA">时间</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3" >
+            <span class="mui-icon-extra mui-icon-extra-prech" style="font-size: 15px; font-weight: bold; color: #2D93CA">金额</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3" >
+            <span class="mui-icon-extra mui-icon-extra-gold" style="font-size: 15px; font-weight: bold; color: #2D93CA">状态</span>
+        </li>
+    </ul>
+    <volist name="rmblist" id="vo">
+        <ul class="mui-table-view mui-grid-view mui-grid-12" >
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-2" style="height: 40px">
+            <span class="" style="font-size: 14px">{$vo.id}</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-4" >
+            <span class="" style="font-size: 14px">{$vo.operdate}</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3" >
+            <span class="" style="font-size: 14px">{$vo.xjnum}</span>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-2 mui-col-sm-3" >
+            <?php
+                                        if($vo['type'] == '1'){
+                                        ?>
+            <span class="mui-icon-extra mui-icon-extra-cart" style="font-size: 14px; color:#4cd964"> 提交</span>
+            <?php }else {?>
+            <span class="mui-icon-extra mui-icon-extra-class" style="font-size: 14px; color:#ff8000"> 完成</span>
+            <?php }?>
+        </li>
+        </ul>
+    </volist>
+</div>
+</body>
+
+</html>

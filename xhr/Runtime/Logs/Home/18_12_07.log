@@ -1,0 +1,254 @@
+[ 2018-12-07T09:22:05+08:00 ] ::1 /xhr/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0079s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 2 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 5 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 6 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 7 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 8 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 9 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: new_list D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Runtime\Cache\Home\168d4556b8b111e55c347193f5ce5e89.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+
+[ 2018-12-07T09:22:08+08:00 ] ::1 /xhr/index.php/Home/Index/video/id/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+
+[ 2018-12-07T09:22:09+08:00 ] ::1 /xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000504s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-12-07T09:22:10+08:00 ] ::1 /xhr/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 5 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 6 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 7 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 8 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 9 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: new_list D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Runtime\Cache\Home\168d4556b8b111e55c347193f5ce5e89.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000564s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000600s ]
+
+[ 2018-12-07T20:44:41+08:00 ] ::1 /xhr/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0071s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 2 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 5 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 6 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 7 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 8 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 9 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: new_list D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Runtime\Cache\Home\168d4556b8b111e55c347193f5ce5e89.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000716s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2018-12-07T20:45:06+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000759s ]
+
+[ 2018-12-07T20:45:08+08:00 ] ::1 /xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006184s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2018-12-07T20:45:12+08:00 ] ::1 /xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0418s ]
+SQL: SELECT * FROM `user` WHERE ( user="xhr" and pasword = "4297f44b13955235245b2497399d7a93"  ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-12-07T20:45:13+08:00 ] ::1 /xhr/index.php/Home/My/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select count(1) js from `user` where pid = 1001  [ RunTime:0.0003s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0010s ]
+SQL: select sum(num) num from gdlist where userid = 1001 and flag = 1 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `parameter` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `parameter` WHERE ( type="sfkqtj" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006480s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
+[ 2018-12-07T20:45:54+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007635s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000654s ]
+
+[ 2018-12-07T20:46:00+08:00 ] ::1 /xhr/index.php/Home/buy/zhifu_181205/vipid/1/money/8.00/uid/1001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `buy_info` [ RunTime:0.0060s ]
+SQL: INSERT INTO `buy_info` (`userid`,`vipid`,`buy_date`,`buy_price`,`flag`) VALUES ('1001','1','2018-12-07','8','0') [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004997s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000706s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000735s ]
+
+[ 2018-12-07T20:47:35+08:00 ] ::1 /xhr/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.1024s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 2 )  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000281s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0396s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 5 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 6 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 7 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 8 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 9 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: new_list D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Runtime\Cache\Home\168d4556b8b111e55c347193f5ce5e89.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+

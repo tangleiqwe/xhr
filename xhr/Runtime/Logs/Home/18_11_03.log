@@ -1,0 +1,708 @@
+[ 2018-11-03T12:04:41+08:00 ] ::1 /xhr/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000872s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0335s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 2 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011675s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 5 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0207s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 6 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 7 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 8 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 9 ) ORDER BY v_pingfen desc LIMIT 3   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: new_list D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Runtime\Cache\Home\168d4556b8b111e55c347193f5ce5e89.php 第 300 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.137391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.137461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001782s ]
+
+[ 2018-11-03T12:04:46+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000757s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+NOTIC: [8] Undefined index: userid D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Home\Controller\MyController.class.php 第 617 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and flag= 1' at line 1
+ [ SQL语句 ] : select * from `user` where userid =  and flag= 1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and flag= 1' at line 1
+ [ SQL语句 ] : select * from `user` where userid =  and flag= 1
+
+[ 2018-11-03T12:04:50+08:00 ] ::1 /xhr/index.php/Home/My/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [8] Undefined index: userid D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Home\Controller\MyController.class.php 第 17 行.
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and flag= 1' at line 1
+ [ SQL语句 ] : select * from `user` where userid =  and flag= 1
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and flag= 1' at line 1
+ [ SQL语句 ] : select * from `user` where userid =  and flag= 1
+
+[ 2018-11-03T12:04:59+08:00 ] ::1 /xhr/index.php/Home/My/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+
+[ 2018-11-03T12:05:00+08:00 ] ::1 /xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001221s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000654s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-11-03T12:05:30+08:00 ] ::1 /xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.1425s ]
+SQL: SELECT * FROM `user` WHERE ( user="xhr" and pasword = "c4ca4238a0b923820dcc509a6f75849b"  ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-11-03T12:05:33+08:00 ] ::1 /xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001366s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0514s ]
+SQL: SELECT * FROM `user` WHERE ( user="xhr" and pasword = "4297f44b13955235245b2497399d7a93"  ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-11-03T12:05:33+08:00 ] ::1 /xhr/index.php/Home/My/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000872s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0007s ]
+SQL: select count(1) js from `user` where pid = 1001  [ RunTime:0.0004s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0379s ]
+SQL: select sum(num) num from gdlist where userid = 1001 and flag = 1 [ RunTime:0.0282s ]
+SQL: SHOW COLUMNS FROM `parameter` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `parameter` WHERE ( type="sfkqtj" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012226s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000595s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000624s ]
+
+[ 2018-11-03T12:05:35+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0003s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000637s ]
+
+[ 2018-11-03T12:05:35+08:00 ] ::1 /xhr/index.php/Home/Index/tab_list
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 2 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 5 ) ORDER BY id desc LIMIT 9   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 6 ) ORDER BY id desc LIMIT 9   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 7 ) ORDER BY id desc LIMIT 9   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 8 ) ORDER BY id desc LIMIT 9   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `videolist` WHERE ( v_type = 9 ) ORDER BY id desc LIMIT 9   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000862s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000899s ]
+
+[ 2018-11-03T12:05:35+08:00 ] ::1 /xhr/index.php/Home/js/mui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+ERR: 无法加载控制器:Js
+
+[ 2018-11-03T12:05:36+08:00 ] ::1 /xhr/index.php/Home/My/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0012s ]
+SQL: select count(1) js from `user` where pid = 1001  [ RunTime:0.0006s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0006s ]
+SQL: select sum(num) num from gdlist where userid = 1001 and flag = 1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `parameter` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `parameter` WHERE ( type="sfkqtj" ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2018-11-03T12:05:38+08:00 ] ::1 /xhr/index.php/Home/My/jbxxxg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000776s ]
+SQL: select * from user where userid = 1001 [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: mjzh D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Home\Controller\MyController.class.php 第 154 行.
+NOTIC: [8] Undefined index: mjtelen D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Home\Controller\MyController.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2018-11-03T12:05:39+08:00 ] ::1 /xhr/index.php/Home/My/pic
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.148547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.148622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000761s ]
+
+[ 2018-11-03T12:05:45+08:00 ] ::1 /xhr/index.php/Home/My/up
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: update user set headimg = '5bdd1e994be54.jpeg' where userid = 1001 [ RunTime:0.0171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001044s ]
+
+[ 2018-11-03T12:05:45+08:00 ] ::1 /xhr/index.php/Home/My/jbxxxg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: select * from user where userid = 1001 [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: mjzh D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Home\Controller\MyController.class.php 第 154 行.
+NOTIC: [8] Undefined index: mjtelen D:\phpStudy\PHPTutorial\WWW\xhr\xhr\Home\Controller\MyController.class.php 第 155 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000858s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-11-03T12:05:47+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000645s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0003s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010223s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000621s ]
+
+[ 2018-11-03T12:06:56+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008601s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008675s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000931s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2018-11-03T12:07:11+08:00 ] ::1 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000616s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0009s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007189s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007227s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002046s ]
+
+[ 2018-11-03T15:37:12+08:00 ] 192.168.0.103 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000600s ]
+
+[ 2018-11-03T15:37:22+08:00 ] 192.168.0.103 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+
+[ 2018-11-03T15:37:23+08:00 ] 192.168.0.103 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+
+[ 2018-11-03T15:37:24+08:00 ] 192.168.0.103 /xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000564s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000635s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000667s ]
+
+[ 2018-11-03T15:37:26+08:00 ] 192.168.0.103 /xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006218s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006262s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-11-03T15:37:49+08:00 ] 192.168.0.104 /xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000644s ]
+
+[ 2018-11-03T15:38:41+08:00 ] 192.168.0.104 /xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `user` WHERE ( user="xhr" and pasword = "4297f44b13955235245b2497399d7a93"  ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-11-03T15:38:41+08:00 ] 192.168.0.104 /xhr/index.php/Home/My/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0005s ]
+SQL: select count(1) js from `user` where pid = 1001  [ RunTime:0.0003s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0011s ]
+SQL: select sum(num) num from gdlist where userid = 1001 and flag = 1 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `parameter` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `parameter` WHERE ( type="sfkqtj" ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006391s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000558s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000586s ]
+
+[ 2018-11-03T15:38:47+08:00 ] 192.168.0.104 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0007s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0093s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2018-11-03T15:38:58+08:00 ] 192.168.0.103 /xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `user` WHERE ( user="xhr" and pasword = "4297f44b13955235245b2497399d7a93"  ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-11-03T15:38:58+08:00 ] 192.168.0.103 /xhr/index.php/Home/My/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select count(1) js from `user` where pid = 1001  [ RunTime:0.0003s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0002s ]
+SQL: select sum(num) num from gdlist where userid = 1001 and flag = 1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `parameter` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `parameter` WHERE ( type="sfkqtj" ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2018-11-03T15:38:59+08:00 ] 192.168.0.103 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001283s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001433s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001518s ]
+
+[ 2018-11-03T15:42:25+08:00 ] 192.168.0.104 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000673s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2018-11-03T15:42:27+08:00 ] 192.168.0.104 /xhr/index.php/Home/my/zhifu_181103/vipid/1/money/8.00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: insert into buy_info(`userid`, `vipid`, `buy_date`, `buy_price`, `flag`) values('1001', '1', '2018-11-03', '8.00', '0') [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000772s ]
+
+[ 2018-11-03T15:46:51+08:00 ] 192.168.0.103 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001535s ]
+
+[ 2018-11-03T15:46:53+08:00 ] 192.168.0.103 /xhr/index.php/Home/my/zhifu_181103/vipid/2/money/58.00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: insert into buy_info(`userid`, `vipid`, `buy_date`, `buy_price`, `flag`) values('1001', '2', '2018-11-03', '58.00', '0') [ RunTime:0.0009s ]
+
+[ 2018-11-03T15:48:48+08:00 ] 192.168.0.103 /xhr/index.php/Home/my/zhifu_181103/vipid/2/money/58.00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: insert into buy_info(`userid`, `vipid`, `buy_date`, `buy_price`, `flag`) values('1001', '2', '2018-11-03', '58.00', '0') [ RunTime:0.0010s ]
+
+[ 2018-11-03T15:51:02+08:00 ] 192.168.0.103 /xhr/index.php/Home/my/zhifu_181103/vipid/2/money/58.00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+SQL: SHOW COLUMNS FROM `buy_info` [ RunTime:0.0049s ]
+SQL: INSERT INTO `buy_info` (`userid`,`vipid`,`buy_date`,`buy_price`,`flag`) VALUES ('1001','2','2018-11-03','58','0') [ RunTime:0.0003s ]
+
+[ 2018-11-03T15:51:35+08:00 ] 192.168.0.104 /xhr/index.php/Home/My/my_vip
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0011s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `mmm` [ RunTime:0.0095s ]
+SQL: SELECT * FROM `mmm` WHERE ( type = 1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000738s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-11-03T15:51:38+08:00 ] 192.168.0.104 /xhr/index.php/Home/my/zhifu_181103/vipid/1/money/8.00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `buy_info` [ RunTime:0.0043s ]
+SQL: INSERT INTO `buy_info` (`userid`,`vipid`,`buy_date`,`buy_price`,`flag`) VALUES ('1001','1','2018-11-03','8','0') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000652s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2018-11-03T15:51:43+08:00 ] 192.168.0.104 /xhr/index.php/Home/my/zhifu_181103/vipid/3/money/158.00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000630s ]
+SQL: SHOW COLUMNS FROM `buy_info` [ RunTime:0.0047s ]
+SQL: INSERT INTO `buy_info` (`userid`,`vipid`,`buy_date`,`buy_price`,`flag`) VALUES ('1001','3','2018-11-03','158','0') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000686s ]
+

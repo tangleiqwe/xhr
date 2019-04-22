@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <include file="Tool/top" />
+    <style>
+        .mui-bar .mui-pull-left .mui-icon {
+            padding-right: 5px;
+            font-size: 28px;
+        }
+
+        .mui-bar .mui-btn {
+            font-weight: normal;
+            font-size: 17px;
+        }
+
+        .mui-bar .mui-btn-link {
+            top: 1px;
+        }
+
+        .mui-content img{
+            width: 100%;
+        }
+        .hm-description{
+            margin: 15px;
+        }
+
+        .hm-description>li {
+            font-size: 14px;
+            color: #8f8f94;
+        }
+        .foot-pad{
+            padding: 0px 0px 0px 0px;
+            min-height: 35px;
+        }
+
+
+        div.search {
+            padding: 8px 0;
+            /*background: #191919;*/
+        }
+        form {
+            position: relative;
+            width: 99%;
+            margin: 0 auto;
+        }
+
+        input, button {
+            border: none;
+            outline: none;
+        }
+
+        input {
+            width: 100%;
+            height: 25px;
+            padding-left: 13px;
+        }
+
+        button {
+            height: 35px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+
+<header class="mui-bar mui-bar-nav" style="height: 40px">
+    <a class="mui-icon mui-icon-left-nav mui-pull-left" href="__APP__/home/Index/index"></a>
+    <h1 class="mui-title">影片搜索结果</h1>
+</header>
+
+<include file="Tool/footer" />
+
+<div class="mui-content" style="padding-bottom: 0px;padding-top: 37px">
+    <div class="search bar6">
+        <form action="__APP__/Home/Index/searchList" method="post">
+            <input type="text" name="str" placeholder="请输入您要搜索的影片名称..." value="{$str}">
+            <button type="submit"></button>
+        </form>
+    </div>
+    <!--<div class="mui-input-row mui-search">
+        <input type="search" class="mui-input-clear" placeholder="搜你想要的" style="height: 30px;font-size: 12px">
+        <span class="mui-icon mui-icon-speech"></span>
+        <button>搜索</button>
+    </div>-->
+    <!--<div class="mui-input-row mui-search">
+        <input type="search" class="mui-input-clear" placeholder="">
+    </div>-->
+</div>
+
+<div class="indexpage mui-content" style="padding-top: 20px">
+    <div class="mui-content" style="background-color:#fff;margin-top:-20px">
+        <div class="mui-card-content">
+            <ul class="mui-table-view mui-grid-view" >
+                <volist name="list" id="vo">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4" >
+                        <a href="__MODULE__/Index/video/id/{$vo.id}">
+                            <img class="mui-media-object" src="__PUBLIC__/upload/pic/{$vo.v_pic}" style="width: 40vm">
+                            <span style="position: absolute; bottom: 36px; left: 18px;background: #191919;padding-left:10px;padding-right: 10px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a;"><span class="mui-icon mui-icon-eye" style="font-size: 12px" ></span> {$vo.v_viewCount}</p></span>
+                            <span style="position: absolute; bottom: 36px; right: 2px;background: #191919;padding-left:10px;padding-right: 10px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a;">{$vo.v_pingfen}</p></span>
+                            <div class="mui-media-body" style="padding-bottom: 25px">{$vo.v_name}</div>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <br>
+
+
+    <!--<div class="mui-content" style="background-color:#fff;margin-top:-20px">
+        <div class="mui-card-header mui-card-media">
+            <img src="__PUBLIC__/images/logo2_2.png">
+            <div class="mui-media-body">
+                最近更新
+                <p>2016-06-30 15:30</p>
+            </div>
+        </div>
+        <div class="mui-card-content">
+            <ul class="mui-table-view mui-grid-view" >
+                <volist name="new_list" id="vo">
+                    <li class="mui-table-view-cell mui-media mui-col-xs-4" >
+                        <a href="__MODULE__/Index/video/id/{$vo.id}">
+                            &lt;!&ndash;<a class="mui-card-link"><p style="font-size: 13px; text-align: right"><span class="mui-icon mui-icon-eye" style="font-size: 14px" ></span>：{$vo.v_buyCount}人</p></a>&ndash;&gt;
+                            <img class="mui-media-object" src="__PUBLIC__/upload/pic/{$vo.v_pic}" style="width: 40vm">
+                            <span style="position: absolute; bottom: 36px; right: 5px;background: #191919;padding-left:5px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a; text-align: right"><span class="mui-icon mui-icon-eye" style="font-size: 12px" ></span> {$vo.v_buyCount}</p></span>
+                            <div class="mui-media-body" style="padding-bottom: 25px">{$vo.v_name}</div>
+                        </a>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+        &lt;!&ndash;<div class="mui-card-footer">
+            <a class="mui-card-link"></a>
+            <a class="mui-card-link" href="__MODULE__/Index/tab_list">查看更多</a>
+            <a class="mui-card-link"></a>
+        </div>&ndash;&gt;
+    </div>-->
+<BR>
+</div>
+
+
+
+</body>
+
+<script type="text/javascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+</script>
+</html>

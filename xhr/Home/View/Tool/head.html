@@ -1,0 +1,26 @@
+
+<header class="mui-bar mui-bar-nav" style="height: 40px;left: auto;right: auto;max-width: 640px;min-width: 320px;margin: 0 auto;width: 100%;background: #191919">
+    <img src="__PUBLIC__/images/baner1.png" style="height: 90%; padding-top: 10px">
+    <!--<h1 class="mui-title">⑤①交易宝</h1>-->
+    <a  class="mui-pull-right" href="#" style="color: #fff">
+        <div class="search bar8">
+            <form action="__APP__/Home/Index/searchList" method="post" id="search_form">
+                <input type="text" id="str" name="str" placeholder="请输入您要搜索的影片名称...">
+                <button type="button" onclick="f_search()" style="z-index: 999"></button>
+                <!--<a id="icon-icon-contact"><span class="mui-icon mui-icon-contact"></span></a>-->
+            </form>
+        </div>
+    </a>
+</header>
+
+<script type="text/javascript">
+    function f_search() {
+        $('#str').width("241");
+        $('#str').focus();
+
+        if ($('#str').width() == "241"){
+            $('#search_form').submit();
+        }
+
+    }
+</script>

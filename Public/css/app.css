@@ -1,0 +1,220 @@
+/*
+ *这是单独为hello mui准备的个性化css，可以覆盖标准mui的css定义；
+ * 在实际项目开发时，建议为App单独写一个css文件，从而实现项目的自定义皮肤功能；
+ * 
+ * */
+html,body{position:relative; min-height:100%; min-width: 320px;max-width: 640px;margin: 0 auto;}
+.mui-plus header.mui-bar{
+	display: none;
+}
+.mui-plus .mui-bar-nav~.mui-content{
+	padding: 0;
+}
+
+/*hm开头的表示仅为 Hello MUI示例定义*/
+.hm-description{
+	margin: .5em 0;
+}
+
+.hm-description>li {
+	font-size: 14px;
+	color: #8f8f94;
+}
+.mui-bar{
+	max-width: 640px;
+	left: auto;
+	right: auto;
+	width: 100%;
+	min-width: 320px;
+	margin:0 auto;
+	background:#191919;
+	color: #fff;
+}
+.mui-bar .mui-title{
+	color: #fff;
+}
+.mui-bar .mui-icon{
+	font-size:20px;
+}
+.indexpage .mui-table-view.mui-grid-view .mui-table-view-cell>a:not(.mui-btn){
+	margin:-15px 0 0 -18px;
+}
+.indexpage .mui-table-view.mui-grid-view .mui-table-view-cell{
+	text-align:left;
+}
+.indexpage .mui-table-view.mui-grid-view .mui-table-view-cell .mui-media-body{
+	font-size:13px;
+	margin-top:5px;
+}
+.indexpage .mui-table-view.mui-grid-view{
+	padding:0 1px 12px 0;
+}
+.indexpage .mui-table-view .mui-media-object{
+	border-radius:2px;
+}
+.indexsearch .mui-search .mui-placeholder{
+	font-size: 12px;
+	line-height:30px;
+}
+.indexsearch .mui-icon-mic-filled:before,.mui-icon-speech:before {
+	content: '\e466'
+}
+.indexsearch .mui-input-row.mui-search .mui-icon-speech{
+	top:4px;
+	font-size: 20px;
+}
+
+.indexsearch .mui-input-row {
+	/*clear: left;*/
+	overflow: hidden
+}
+.indexsearch .mui-bar-nav{
+	top: 0;
+}
+
+/*搜索框6*/
+/*.bar6 {background: #F9F0DA;}*/
+.bar6 input {
+	border: 1px solid #c5464a;
+	border-radius: 5px;
+	background: transparent;
+	top: 0;
+	right: 0;
+	margin-bottom: 0px;
+	height: 35px;
+	font-size: 14px;
+}
+.bar6 button {
+	background: #c5464a;
+	border-radius: 0 5px 5px 0;
+	width: 60px;
+	top: 0;
+	right: 0;
+}
+.bar6 button:before {
+	content: "搜索";
+	font-size: 13px;
+	color: #F9F0DA;
+}
+
+/*搜索框8*/
+.bar8 {background: #B46381;}
+.bar8 form {
+	height: 30px;
+}
+.bar8 input {
+	width: 0;
+	padding: 0 42px 0 15px;
+	border-bottom: 1px solid transparent;
+	background: transparent;
+	transition: .3s linear;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	font-size: 12px;
+}
+/*.bar8 input:focus {
+    width: 300px;
+    z-index: 1;
+    !*border-bottom: 1px solid #F9F0DA;*!
+}*/
+.bar8 button {
+	background: #683B4D;
+	top: 4px;
+	right: 0;
+	padding:0;
+
+}
+.bar8 button:before {
+	content: '搜索';
+	font-family: FontAwesome;
+	font-size: 12px;
+	color: #F9F0DA;
+}
+.wrap_con{min-width: 320px;max-width: 640px;margin: 0 auto;}
+.footbar {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #fff;
+	z-index: 50
+}
+.askprice_footbar {
+	box-shadow: 0 -2px 4px 0 rgba(0,0,0,.08);
+	height: 54px;
+	padding: 10px 10px 10px 6px;
+	background: #fff;
+	color: #5f6670;
+	z-index: 999
+}
+.btn_group .btn {
+	float: left;
+	display: block;
+	width: 31%;
+	height: 35px;
+	line-height: 35px;
+	font-size: 15px;
+	background: #ff6366;
+	border-radius: 20px;
+	text-align: center;
+	color: #fff
+}
+
+.btn_group .btn.btn_buy {
+	background: #23ac38
+}
+.btn_group .btn.btn_kanjia {
+	background: #8a6de9;
+}
+.btn_group .btn.btn_jh {
+	background: #fff;
+	border-radius: 20px;
+	text-align: right;
+	color: #fff
+}
+
+.btn_group .btn.btn_bargain {
+	margin-right: 3%
+}
+.btn_group .btn.btn_kanjia {
+	margin-right: 3%
+}
+.btn_group .left_box {
+	width: 275px
+}
+.btn_group .btn.btn_zhifu {
+	border-radius: 0px;
+
+}
+.btn_group .btn.btn_caogao {
+	border-radius: 0px;
+	background: #e6e6e6;
+	color: #000;
+}
+.btn_group .left_box .icon_btn {
+	width: 44px;
+	float: left;
+	padding-top: 28px;
+	text-align: center;
+	background-position: 50% 5px;
+	background-repeat: no-repeat;
+	background-size: 24px auto;
+	font-size: 12px
+}
+.btn_group .left_box .icon_wxyy {
+	background-image: url(../images/liuyan3.png)
+}
+.dis_box { display: -webkit-box; display: -moz-box; display: -ms-box; display: box;}
+.box_flex { -webkit-box-flex: 1; -moz-box-flex: 1; -ms-box-flex: 1; box-flex: 1; display: block; width: 100%; }
+.btn_group .left_box .icon_btn {
+	width: 44px;
+	float: left;
+	padding-top: 28px;
+	text-align: center;
+	background-position: 50% 5px;
+	background-repeat: no-repeat;
+	background-size: 24px auto;
+	font-size: 12px
+}

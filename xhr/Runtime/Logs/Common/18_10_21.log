@@ -1,0 +1,60 @@
+[ 2018-10-21T21:13:00+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:13:01+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001382s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:13:22+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001589s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:13:22+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000123s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004243s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:16:25+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002518s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:16:25+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:18:47+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000925s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:18:47+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:19:26+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001200s ]
+ERR: 无法加载模块:Public
+
+[ 2018-10-21T21:19:26+08:00 ] 192.168.0.103 /xhr/Public/script/qrcode.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+ERR: 无法加载模块:Public
+

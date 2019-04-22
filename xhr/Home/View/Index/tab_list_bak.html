@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Tool/top" />
+    <style>
+        html,
+        body {
+            background-color: #efeff4;
+        }
+        .mui-bar~.mui-content .mui-fullscreen {
+            top: 44px;
+            height: auto;
+        }
+        .mui-pull-top-tips {
+            position: absolute;
+            top: -20px;
+            left: 50%;
+            margin-left: -25px;
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            z-index: 1;
+        }
+        .mui-bar~.mui-pull-top-tips {
+            top: 24px;
+        }
+        .mui-pull-top-wrapper {
+            width: 42px;
+            height: 42px;
+            display: block;
+            text-align: center;
+            background-color: #efeff4;
+            border: 1px solid #ddd;
+            border-radius: 25px;
+            background-clip: padding-box;
+            box-shadow: 0 4px 10px #bbb;
+            overflow: hidden;
+        }
+        .mui-pull-top-tips.mui-transitioning {
+            -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+        }
+        .mui-pull-top-tips .mui-pull-loading {
+            /*-webkit-backface-visibility: hidden;
+            -webkit-transition-duration: 400ms;
+            transition-duration: 400ms;*/
+
+            margin: 0;
+        }
+        .mui-pull-top-wrapper .mui-icon,
+        .mui-pull-top-wrapper .mui-spinner {
+            margin-top: 7px;
+        }
+        .mui-pull-top-wrapper .mui-icon.mui-reverse {
+            /*-webkit-transform: rotate(180deg) translateZ(0);*/
+        }
+        .mui-pull-bottom-tips {
+            text-align: center;
+            background-color: #efeff4;
+            font-size: 15px;
+            line-height: 40px;
+            color: #777;
+            padding-bottom: 60px;
+        }
+        .mui-pull-top-canvas {
+            overflow: hidden;
+            background-color: #fafafa;
+            border-radius: 40px;
+            box-shadow: 0 4px 10px #bbb;
+            width: 40px;
+            height: 40px;
+            margin: 0 auto;
+        }
+        .mui-pull-top-canvas canvas {
+            width: 40px;
+        }
+        .mui-slider-indicator.mui-segmented-control {
+            background-color: #efeff4;
+        }
+
+        div.search {
+            padding: 5px 0;
+            background: #191919;
+        }
+        form {
+            position: relative;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        input, button {
+            border: none;
+            outline: none;
+        }
+
+        input {
+            width: 100%;
+            height: 30px;
+            padding-left: 13px;
+        }
+
+        button {
+            height: 25px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<include file="Tool/head" />
+
+<div class="indexpage mui-content" style="padding-top: 40px;height: 1500px;">
+
+    <div id="slider" class="mui-slider mui-fullscreen ">
+        <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted" >
+            <div class="mui-scroll">
+                <volist name="type_list" id="vo" >
+                    <a class="mui-control-item <?php if($vo['id']== $tab) echo 'mui-active'?>" href="#item{$vo.id}">
+                        {$vo.name}
+                    </a>
+                </volist>
+            </div>
+        </div>
+        <div id="div_tab"  class="mui-slider-group">
+            <volist name="type_list" id="vo" >
+                <div id="item{$vo.id}" class="mui-slider-item mui-control-content <?php if($vo['id']== $tab) echo 'mui-active'?>">
+                    <div class="mui-scroll-wrapper">
+                        <div class="mui-scroll" id="{$vo.id}">
+                            <ul id="ul_{$vo.id}" dtype="{$vo.id}" class="mui-table-view mui-grid-view" >
+                                <?php
+                                $list = M('videolist')->where('v_type = '.$vo['id'])->order('id desc')->limit(9)->select();
+                                ?>
+                                <volist name="list" id="vo_p">
+                                    <li class="mui-table-view-cell mui-media mui-col-xs-4" >
+                                        <a id="{$vo_p.id}">
+                                            <img class="mui-media-object" src="{$vo_p.v_pic}" style="width: 40vm">
+                                            <span style="position: absolute; bottom: 36px; left: 18px;background: #191919;padding-left:10px;padding-right: 10px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a;"><span class="mui-icon mui-icon-eye" style="font-size: 12px" ></span> {$vo_p.v_viewCount}</p></span>
+                                            <span style="position: absolute; bottom: 36px; right: 2px;background: #191919;padding-left:10px;padding-right: 10px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a;">{$vo_p.v_pingfen}</p></span>
+
+                                            <div class="mui-media-body" style="padding-bottom: 25px">{$vo_p.v_name}</div>
+                                        </a>
+                                    </li>
+                                </volist>
+
+
+                            </ul>
+                            <div class="mui-card-footer">
+                                <a class="mui-card-link"></a>
+                                <div id="more_{$vo.id}" class="mui-card-link" onclick="addendList(this)">点击 查看更多</div>
+                                <div id="all_{$vo.id}" class="mui-card-link" style="display: none" >无更多内容</div>
+                                <a class="mui-card-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </volist>
+        </div>
+
+    </div>
+
+</div>
+
+
+<include file="Tool/footer" />
+
+<script>
+    mui.init();
+    function addendList(obj) {
+        var ul = $(obj).parent().parent().find("ul");
+        var type_id = ul.attr('dtype');
+        lis = ul.children();
+         $.ajax({
+             url:"__MODULE__/Index/new_tab_list",//这里指向的就不再是页面了，而是一个方法。
+             data:{type:type_id,count:lis.length},
+             type:"POST",
+             dataType:"text",
+             success: function(data){
+                data_list = eval(data);
+             console.log(data_list.length);
+                 if(data_list.length != 0){
+                     var temp = createFragment(ul,data_list);
+                     console.log(temp);
+                     ul.append(temp);
+//                     new_lis = ul.getElementsByTagName('li');
+//                    self.endPullUpToRefresh();
+                 } else {
+                     $('#more_'+type_id).hide();
+                     $('#all_'+type_id).show();
+//                    self.endPullUpToRefresh(true); //参数是true，加载完毕
+                 }
+             }
+         })
+    }
+    var createFragment = function(ul, data_list) {
+//        var length = ul.querySelectorAll('li').length;
+        var fragment = document.createDocumentFragment();
+        var li;
+        $.each(data_list, function (i) {
+            //console.log(data_list[i]);
+            li = document.createElement('li');
+            li.className = 'mui-table-view-cell mui-media mui-col-xs-4';
+            var a_id = data_list[i].id;
+            li.innerHTML = '<a href="__MODULE__/Index/video/id/'+ a_id +'">' +
+                    '<img class="mui-media-object" src="__PUBLIC__/upload/pic/'+ data_list[i].v_pic +'" style="width: 40vm">' +
+                    '<span style="position: absolute; bottom: 36px; left: 18px;background: #191919;padding-left:10px;padding-right: 10px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a;"><span class="mui-icon mui-icon-eye" style="font-size: 12px" ></span> '+ data_list[i].v_viewCount +'</p></span>' +
+                    '<span style="position: absolute; bottom: 36px; right: 2px;background: #191919;padding-left:10px;padding-right: 10px;filter: alpha(opacity=60);"><p style="font-size: 12px;color: #e77b4a;">'+ data_list[i].v_pingfen +'</p></span>' +
+                    '<div class="mui-media-body" style="padding-bottom: 25px">'+ data_list[i].v_name +'</div></a>';
+            fragment.appendChild(li);
+        })
+        return fragment;
+    };
+    (function($) {
+
+        $("#div_tab").on('tap', 'a', function (event) {
+            //console.log(this.id);
+            window.location.href="__MODULE__/Index/video/id/" + this.id;
+        });
+    })(mui);
+</script>
+<script>
+
+</script>
+</body>
+</html>

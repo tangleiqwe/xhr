@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+<head>
+
+    <include file="Tool/top" />
+    <style>
+        .area {
+            margin: 20px auto 0px auto;
+        }
+
+        .mui-input-group {
+            margin-top: 10px;
+        }
+
+        .mui-input-group:first-child {
+            margin-top: 2px;
+        }
+
+        .mui-input-group label {
+            width: 25%;
+        }
+
+        .mui-input-row label~input,
+        .mui-input-row label~select,
+        .mui-input-row label~textarea {
+            width: 75%;
+        }
+
+        .mui-checkbox input[type=checkbox],
+        .mui-radio input[type=radio] {
+            top: 6px;
+        }
+
+        .mui-content-padded {
+            margin-top: 10px;
+        }
+
+        .mui-btn {
+            padding: 10px;
+        }
+
+        .link-area {
+            display: block;
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        .spliter {
+            color: #bbb;
+            padding: 0px 8px;
+        }
+
+        .oauth-area {
+            position: absolute;
+            bottom: 20px;
+            left: 0px;
+            text-align: center;
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .oauth-area .oauth-btn {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-size: 30px 30px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin: 0px 20px;
+            /*-webkit-filter: grayscale(100%); */
+            border: solid 1px #ddd;
+            border-radius: 25px;
+        }
+
+        .oauth-area .oauth-btn:active {
+            border: solid 1px #aaa;
+        }
+
+        .oauth-area .oauth-btn.disabled {
+            background-color: #ddd;
+        }
+    </style>
+
+</head>
+
+<body class="mui-android mui-android-6 mui-android-6-0">
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">账号注册</h1>
+</header>
+<div class="mui-content">
+    <div class="mui-card">
+        <!--<div class="mui-card-header mui-card-media" style="height:18vw;background-image:url(__PUBLIC__/images/banner4.jpg)"></div>-->
+    <form class="mui-input-group" action="__APP__/Home/User/zhuce_insert" method="post">
+        <!--<div class="mui-input-row" style="background:#F5F5F5 "> <h5 class="mui-content-padded">登录信息</h5>  </div>-->
+        <div class="mui-input-row" style="height: 50px">
+            <label>账号</label>
+            <input id='account' name="account" type="text" class="mui-input-clear mui-input" placeholder="请输入登录账号">
+        </div>
+
+        <div class="mui-input-row"  style="height: 50px">
+            <label>密码</label>
+            <input id='password' name="password" type="password" class="mui-input-clear mui-input" placeholder="请输入密码">
+            <!--<span class="mui-icon mui-icon-eye"></span>-->
+        </div>
+        <div class="mui-input-row"  style="height: 50px">
+            <label>密码找回key</label>
+            <input id='r_key' name="r_key" type="number" class="mui-input-clear mui-input" placeholder="请输入6位数字（请记牢，找回密码时使用）">
+        </div>
+        <div class="mui-input-row"  style="height: 50px">
+            <label>邀请人</label>
+            <input id='no' name="no" type="text" class="mui-input-clear mui-input" placeholder="邀请人ID（如没有可不填）" value="<?=$no?>">
+        </div>
+    <div class="mui-content-padded">
+        <button id='login' type="submit" class="mui-btn mui-btn-block mui-btn-primary" >注 册 用 户</button>
+    </div>
+    </form>
+        </div>
+</div>
+
+<include file="Tool/footer" />
+
+</body>
+
+</html>

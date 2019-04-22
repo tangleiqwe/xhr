@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Tool/top" />
+    <script type="text/javascript" src="__PUBLIC__/js/chplayer/chplayer.js"></script>
+    <!--<script type="text/javascript" src="__PUBLIC__/js/chplayer/player.js"></script>-->
+    <style>
+        h5 {
+        margin: 5px 7px;
+        }
+    </style>
+</head>
+<body>
+<header class="mui-bar mui-bar-nav" style="height: 40px">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title"><?=$v_info['v_name']?></h1>
+</header>
+<div class="mui-content" style="padding-top:40px">
+    <form method="post" class="" action="__MODULE__/My/my_vip">
+        <div class="mui-content" style="background-color:#fff">
+        <div class="mui-card-content" >
+                <div id="video" style="width:100%;height: 280px;"></div>
+        </div>
+        <?php if($buy_flag == 'false') {?>
+            <div class="mui-card-content"  style="background-color: #191919;padding: 5px">
+                <span style="color: #fff;font-size: 12px;padding: 5px">试看<?=$sksj?>秒，观看完整版请<a href="__MODULE__/My/my_vip" style="color: #59ac2a;font-size: 13px;font-weight: 600"> 开通会员</a></span>
+            </div>
+        <?php }?>
+        <div class="mui-card-content">
+            <div class="mui-card-content-inner">
+                <p>更新于： <?=$v_info['v_createdate']?></p>
+                <p style="color: #333;"><?=$v_info['v_memo']?></p>
+            </div>
+        </div>
+        <div class="mui-card-footer foot-pad">
+            <a class="mui-card-link">评分：<?=$v_info['v_pingfen']?></a>
+            <a class="mui-card-link">观看人数：<?=$v_info['v_viewCount']?></a>
+        </div>
+
+        <!--<div class="mui-card-footer">
+            <?php if($buy_flag == 'false') {?>
+                <button type="submit" class="mui-btn mui-btn-success mui-btn-block">
+                    <?php if($loginflag == 1){?>
+                        购 买 VIP 观 看
+                    <?php } else {?>
+                        请先登录，再点击观看
+                    <?php }?>
+                </button>
+            <?php } else {?>
+            <span class="mui-badge mui-badge-warning mui-badge-inverted" style="font-size: 16px">已是vip会员，请直接观看！</span>
+            <?php }?>
+        </div>-->
+
+    </div>
+</form>
+</div>
+
+<script type="text/javascript">
+    mui.init({
+        swipeBack: true //启用右滑关闭功能
+    });
+    mui('.mui-scroll-wrapper').scroll();
+    mui('body').on('shown', '.mui-popover', function(e) {
+        //console.log('shown', e.detail.id);//detail为当前popover元素
+    });
+    mui('body').on('hidden', '.mui-popover', function(e) {
+        //console.log('hidden', e.detail.id);//detail为当前popover元素
+    });
+
+    var video="";
+
+    video_url = ROOT + "/pp_ht/Public"+"<?=$v_info['v_url']?>";
+    video_img_url = "<?=$v_info['v_pic']?>";
+
+    var videoObject = {
+        container: '#video',
+        variable: 'player',
+        volume: 0.6,
+        poster: video_img_url,
+        autoplay: false,
+        loop: false,
+        live: false,
+        loaded: 'loadedHandler',
+        video: video_url
+    };
+    player=new chplayer(videoObject);
+
+    /*$.ajax({
+        url:"__MODULE__/My/geturl",
+        data:{id:<?=$v_info['id']?>},
+        type:"POST",
+        dataType:"text",
+        success: function(data){
+        video = eval(data);
+
+        }
+    })*/
+
+    function play() {
+        player.playOrPause();
+    }
+    function loadedHandler(){
+        //播放器加载成功，可以注册监听
+        player.addListener('error', errorHandler); //监听视频加载出错
+        player.addListener('timeupdate', timeUpdateHandler); //监听播放时间
+        player.addListener('play', playHandler); //监听视频加载出错
+        player.addListener('pause', pauseHandler); //监听视频加载出错
+    }
+    function errorHandler(){
+        alert('视频加载失败！');
+    }
+    var elementLogin = null; //是否存在提示层
+    var buy_flag = <?=$buy_flag?>;
+    var loginShow = false;
+
+    var play_count_flag = true; //观看计数开关
+
+    function timeUpdateHandler() {
+        if(player.time >= {$sksj} && !buy_flag) {
+            player.pause();//暂停播放
+        }
+    }
+    function playHandler() { //监听播放状态
+        if (play_count_flag){
+
+            $.ajax({
+                url:"__MODULE__/Index/view_count",
+                data:{id:<?=$v_info['id']?>},
+                type:"POST",
+                dataType:"text",
+                success: function(data){
+                    data_list = eval(data);
+
+                }
+            })
+
+            play_count_flag = false;
+        }
+
+        if(loginShow) {
+            player.pause();
+        }
+    }
+    function pauseHandler() {
+        if(player.time >= {$sksj} && !buy_flag) {
+            if(!loginShow && !elementLogin) {
+                if(confirm('{$sksj}秒试看结束，是否去购买VIP继续观看？')==true){
+                    window.location.href="__MODULE__/My/my_vip";
+                }else{
+                    window.location.reload();
+                }
+            }
+        }
+    }
+    function fullHandler(b) { //监听全屏切换
+        if(loginShow && elementLogin) {
+            player.deleteElement(elementLogin);
+            elementLogin = null;
+            window.setTimeout('showLogin()', 200);
+        }
+    }
+    function showlable() { //显示需要购买继续观看
+        loginShow = true;
+        var attribute = {
+            list: [//list=定义元素列表
+                {
+                    type: 'text',//说明是文本
+                    text: '30秒试看结束，请购买vip观看！',//文本内容
+                    fontColor: '#FFFFFF',//文本颜色
+                    fontSize: 14,//文本字体大小，单位：px
+                    fontFamily: '"Microsoft YaHei", YaHei, "微软雅黑", SimHei,"\5FAE\8F6F\96C5\9ED1", "黑体",Arial',//文本字体
+                    lineHeight:30,//文字行距
+                    alpha: 1,//文本透明度(0-1)
+                    paddingLeft:15,//文本内左边距离
+                    paddingRight:15,//文本内右边距离
+                    paddingTop:5,//文本内上边的距离
+                    paddingBottom:5,//文本内下边的距离
+                    marginLeft:10,//文本离左边的距离
+                    marginRight:0,//文本离右边的距离
+                    marginTop:10,//文本离上边的距离
+                    marginBottom:0,//文本离下边的距离
+                    backgroundColor:'#000000',//文本的背景颜色
+                    backAlpha:0.5,//文本的背景透明度(0-1)
+                    backRadius:30//文本的背景圆角弧度
+                }
+            ],
+            x:10,//元件x轴坐标，注意，如果定义了position就没有必要定义x,y的值了，x,y支持数字和百分比，使用百分比时请使用单引号，比如'50%'
+            y: 10,//元件y轴坐标
+            alpha:1,//元件的透明度
+            backAlpha:0.5,//元件的背景透明度(0-1)
+            backRadius:60//元件的背景圆角弧度
+        }
+        elementLogin=player.addElement(attribute);//elementLogin是返回元件本身，可以用于其它用户，比如缓动
+    }
+</script>
+<include file="Tool/footer" />
+</body>
+</html>

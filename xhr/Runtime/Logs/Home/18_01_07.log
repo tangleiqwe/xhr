@@ -1,0 +1,576 @@
+[ 2018-01-07T12:25:30+08:00 ] ::1 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `gdlist` [ RunTime:0.0082s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price asc LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: select sum(num) num,sum(sumje) sumje from cjlist where flag = 1  [ RunTime:0.0026s ]
+SQL: select DATE_FORMAT(operdate,'%m.%d') date,sum(num) num,max(price) price from cjlist where flag = 1 GROUP BY DATE_FORMAT(operdate,'%Y-%m-%d') [ RunTime:0.0026s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Home\Controller\UserController.class.php 第 127 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\656ba93553acb5829c5df52036a5a852.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001080s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001147s ]
+
+[ 2018-01-07T12:25:33+08:00 ] ::1 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001361s ]
+SQL: SHOW COLUMNS FROM `gdlist` [ RunTime:0.0115s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: select sum(num) num,sum(sumje) sumje from cjlist where flag = 1  [ RunTime:0.0003s ]
+SQL: select DATE_FORMAT(operdate,'%m.%d') date,sum(num) num,max(price) price from cjlist where flag = 1 GROUP BY DATE_FORMAT(operdate,'%Y-%m-%d') [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Home\Controller\UserController.class.php 第 127 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000247s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\656ba93553acb5829c5df52036a5a852.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011234s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011369s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2018-01-07T14:27:32+08:00 ] ::1 /dcdw/index.php/Home/My/trad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000828s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-01-07T14:27:33+08:00 ] ::1 /dcdw/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000375s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013670s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000848s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2018-01-07T14:37:18+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `gdlist` [ RunTime:0.0087s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: select sum(num) num,sum(sumje) sumje from cjlist where flag = 1  [ RunTime:0.0011s ]
+SQL: select DATE_FORMAT(operdate,'%m.%d') date,sum(num) num,max(price) price from cjlist where flag = 1 GROUP BY DATE_FORMAT(operdate,'%Y-%m-%d') [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Home\Controller\UserController.class.php 第 127 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\656ba93553acb5829c5df52036a5a852.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010130s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-01-07T16:31:04+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `gdlist` [ RunTime:0.0051s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price asc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `price` FROM `gdlist` WHERE ( flag = '1' ) ORDER BY price desc LIMIT 1   [ RunTime:0.0002s ]
+SQL: select sum(num) num,sum(sumje) sumje from cjlist where flag = 1  [ RunTime:0.0007s ]
+SQL: select DATE_FORMAT(operdate,'%m.%d') date,sum(num) num,max(price) price from cjlist where flag = 1 GROUP BY DATE_FORMAT(operdate,'%Y-%m-%d') [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Home\Controller\UserController.class.php 第 127 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\656ba93553acb5829c5df52036a5a852.php 第 192 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2018-01-07T16:34:44+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001168s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001309s ]
+
+[ 2018-01-07T16:35:18+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+ERR: 模板不存在:./dcdw/Home/View/Index/index.html
+
+[ 2018-01-07T16:43:55+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000722s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001315s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001388s ]
+
+[ 2018-01-07T16:44:00+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001141s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001224s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2018-01-07T16:44:03+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004413s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000674s ]
+
+[ 2018-01-07T16:44:04+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004472s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000653s ]
+
+[ 2018-01-07T16:44:04+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008393s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000610s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2018-01-07T16:44:04+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006518s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000677s ]
+
+[ 2018-01-07T17:57:35+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000644s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2018-01-07T17:58:07+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 192 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 263 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 270 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 277 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 284 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 353 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 364 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 369 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000386s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000716s ]
+
+[ 2018-01-07T17:58:10+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000855s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 192 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 263 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 270 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 277 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 284 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 353 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 364 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 369 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008890s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2018-01-07T18:04:02+08:00 ] 192.168.0.107 /dcdw/index.php/Home/My/trad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+
+[ 2018-01-07T18:04:04+08:00 ] 192.168.0.107 /dcdw/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000529s ]
+
+[ 2018-01-07T18:06:29+08:00 ] 192.168.0.107 /dcdw/index.php/Home/My/trad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000890s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000959s ]
+
+[ 2018-01-07T18:06:31+08:00 ] 192.168.0.107 /dcdw/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000970s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000555s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2018-01-07T18:08:26+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 192 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 263 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 270 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 277 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 284 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 353 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 364 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 369 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2018-01-07T18:09:32+08:00 ] 192.168.0.107 /dcdw/index.php/Home/My/trad
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+
+[ 2018-01-07T18:09:34+08:00 ] 192.168.0.107 /dcdw/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2018-01-07T18:09:40+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000623s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 192 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 263 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 270 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 277 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 284 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 353 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 364 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 369 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000603s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2018-01-07T18:10:38+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 173 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 244 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 251 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 258 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 265 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 334 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 345 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 350 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000861s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002222s ]
+
+[ 2018-01-07T18:11:17+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 192 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 263 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 270 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 277 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 284 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 353 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 364 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 369 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2018-01-07T18:13:54+08:00 ] 192.168.0.107 /dcdw/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: user D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 192 行.
+NOTIC: [8] Undefined variable: d_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 263 行.
+NOTIC: [8] Undefined variable: g_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 270 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 277 行.
+NOTIC: [8] Undefined variable: sumje D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 284 行.
+NOTIC: [8] Undefined variable: res_date D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 353 行.
+NOTIC: [8] Undefined variable: res_num D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 364 行.
+NOTIC: [8] Undefined variable: res_price D:\phpStudy\PHPTutorial\WWW\dcdw\dcdw\Runtime\Cache\Home\bc7d05e234b6076a3c7ded4c4fed4836.php 第 369 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002216s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002302s ]
+

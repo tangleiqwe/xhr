@@ -1,0 +1,46 @@
+<nav class="mui-bar mui-bar-tab" style="left: auto;right: auto;max-width: 640px;min-width: 320px;margin: 0 auto">
+    <ul class="mui-table-view mui-grid-view mui-grid-12" style="padding: 0 0 3px 0; background-color: #303032" >
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3
+         <?php if($footIndex == 1){ ?>
+            foot-active
+        <?php } else {?>
+            foot-no
+        <?php }?>
+        " >
+            <a href="__MODULE__/Index/index">
+                <span class="mui-icon mui-icon-home" style="padding-top: 0px;padding-bottom: 0px"></span>
+                <div class="mui-tab-label" style="font-size: 14px">首页</div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3
+         <?php if($footIndex == 2){ ?>
+            foot-active
+        <?php } else {?>
+            foot-no
+        <?php }?>
+        "><a href="__MODULE__/Index/tab_list">
+            <span class="mui-icon mui-icon-navigate" style="padding-top: 0px;padding-bottom: 0px"></span>
+            <div class="mui-tab-label" style="font-size: 14px">分类</div>
+        </a></li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3
+         <?php if($footIndex == 3){ ?>
+            foot-active
+        <?php } else {?>
+            foot-no
+        <?php }?>
+        "><a href="__MODULE__/My/my_vip">
+            <span class="mui-icon mui-icon-search" style="padding-top: 0px;padding-bottom: 0px"></span>
+            <div class="mui-tab-label" style="font-size: 14px">VIP会员</div>
+        </a></li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-3 mui-col-sm-3
+        <?php if($footIndex == 4){ ?>
+            foot-active
+        <?php } else {?>
+            foot-no
+        <?php }?>
+        "><a href="__MODULE__/My/Index">
+            <span class="mui-icon mui-icon-person" style="padding-top: 0px;padding-bottom: 0px"></span>
+            <div class="mui-tab-label" style="font-size: 14px">个人中心</div>
+        </a></li>
+    </ul>
+</nav>

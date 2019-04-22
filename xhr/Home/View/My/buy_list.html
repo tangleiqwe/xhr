@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Tool/top" />
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">打赏记录</h1>
+</header>
+<include file="Tool/footer" />
+<div class="mui-content">
+    <ul class="mui-table-view">
+        <volist name="buy_list" id="vo">
+            <li class="mui-table-view-cell mui-media" style="height: 70px">
+                <a href="__MODULE__/Index/video/id/{$vo.videoid}" class="mui-navigate-right">
+                    <img class="mui-media-object mui-pull-left" src="__PUBLIC__/upload/pic/{$vo.v_pic}">
+                    <div class="mui-media-body">
+                        {$vo.v_name}
+                        <p class='mui-ellipsis'>打赏于：<?=$vo['buy_date']?></p>
+                    </div>
+                </a>
+            </li>
+        </volist>
+    </ul>
+
+</div>
+</body>
+</html>

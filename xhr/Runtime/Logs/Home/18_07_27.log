@@ -1,0 +1,199 @@
+[ 2018-07-27T12:47:18+08:00 ] ::1 /bak_0624/xhr/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+SQL: SHOW COLUMNS FROM `videolist` [ RunTime:0.0097s ]
+SQL: SELECT * FROM `videolist` ORDER BY id desc LIMIT 10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025175s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002182s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002366s ]
+
+[ 2018-07-27T12:47:21+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001155s ]
+
+[ 2018-07-27T12:47:23+08:00 ] ::1 /bak_0624/xhr/index.php/Home/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000219s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013482s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2018-07-27T12:47:30+08:00 ] ::1 /bak_0624/xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0101s ]
+SQL: SELECT * FROM `user` WHERE ( user="ceshi01" ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-07-27T12:48:14+08:00 ] ::1 /bak_0624/xhr/index.php/Home/User/checkLogined
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002467s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `user` WHERE ( user="xhr" ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-07-27T12:48:15+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/Index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002866s ]
+SQL: select * from `user` where userid = 1001 and flag= 1 [ RunTime:0.0004s ]
+SQL: select count(1) js from `user` where pid = 1001  [ RunTime:0.0002s ]
+SQL: select xjnum from userzj where userid = 1001 [ RunTime:0.0044s ]
+SQL: select sum(num) num from gdlist where userid = 1001 and flag = 1 [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001446s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002438s ]
+
+[ 2018-07-27T12:48:17+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/join
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001582s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001636s ]
+SQL: select m1.`user`,m1.userid,m1.headimg,m1.pid,case when m1.p_yongjin is null then 0 else m1.p_yongjin end p_yongjin, case when m2.pp_yongjin is null then 0 else m2.pp_yongjin end pp_yongjin, case when m3.js is null then 0 else m3.js end js from  ( select a.`user`,a.headimg,a.`name`,a.userid,a.pid,t.p_yongjin from `user` a LEFT JOIN ( select userid,sum(p_yongjin) p_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid where a.pid = 1001 and a.flag = 1  ) m1 LEFT JOIN ( select a.pid,sum(t.pp_yongjin) pp_yongjin from `user` a 	LEFT JOIN ( select userid,sum(pp_yongjin) pp_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid 	where a.flag = 1 	GROUP BY a.pid ) m2 on m1.userid = m2.pid LEFT JOIN ( SELECT pid,count(1) js from `user` where flag = 1 GROUP BY pid ) m3 on m1.userid = m3.pid [ RunTime:0.0093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002377s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002694s ]
+
+[ 2018-07-27T12:48:37+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/join
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001398s ]
+SQL: select m1.`user`,m1.userid,m1.headimg,m1.pid,case when m1.p_yongjin is null then 0 else m1.p_yongjin end p_yongjin, case when m2.pp_yongjin is null then 0 else m2.pp_yongjin end pp_yongjin, case when m3.js is null then 0 else m3.js end js from  ( select a.`user`,a.headimg,a.`name`,a.userid,a.pid,t.p_yongjin from `user` a LEFT JOIN ( select userid,sum(p_yongjin) p_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid where a.pid = 1001 and a.flag = 1  ) m1 LEFT JOIN ( select a.pid,sum(t.pp_yongjin) pp_yongjin from `user` a 	LEFT JOIN ( select userid,sum(pp_yongjin) pp_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid 	where a.flag = 1 	GROUP BY a.pid ) m2 on m1.userid = m2.pid LEFT JOIN ( SELECT pid,count(1) js from `user` where flag = 1 GROUP BY pid ) m3 on m1.userid = m3.pid [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001135s ]
+
+[ 2018-07-27T12:48:40+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/reg_invitation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001247s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: select * from user where userid = 1001 [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001075s ]
+
+[ 2018-07-27T12:48:46+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/join
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+SQL: select m1.`user`,m1.userid,m1.headimg,m1.pid,case when m1.p_yongjin is null then 0 else m1.p_yongjin end p_yongjin, case when m2.pp_yongjin is null then 0 else m2.pp_yongjin end pp_yongjin, case when m3.js is null then 0 else m3.js end js from  ( select a.`user`,a.headimg,a.`name`,a.userid,a.pid,t.p_yongjin from `user` a LEFT JOIN ( select userid,sum(p_yongjin) p_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid where a.pid = 1001 and a.flag = 1  ) m1 LEFT JOIN ( select a.pid,sum(t.pp_yongjin) pp_yongjin from `user` a 	LEFT JOIN ( select userid,sum(pp_yongjin) pp_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid 	where a.flag = 1 	GROUP BY a.pid ) m2 on m1.userid = m2.pid LEFT JOIN ( SELECT pid,count(1) js from `user` where flag = 1 GROUP BY pid ) m3 on m1.userid = m3.pid [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011149s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000950s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001088s ]
+
+[ 2018-07-27T13:01:14+08:00 ] ::1 /bak_0624/xhr/index.php/Home/My/join
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001861s ]
+SQL: select m1.`user`,m1.userid,m1.headimg,m1.pid,case when m1.p_yongjin is null then 0 else m1.p_yongjin end p_yongjin, case when m2.pp_yongjin is null then 0 else m2.pp_yongjin end pp_yongjin, case when m3.js is null then 0 else m3.js end js from  ( select a.`user`,a.headimg,a.`name`,a.userid,a.pid,t.p_yongjin from `user` a LEFT JOIN ( select userid,sum(p_yongjin) p_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid where a.pid = 1001 and a.flag = 1  ) m1 LEFT JOIN ( select a.pid,sum(t.pp_yongjin) pp_yongjin from `user` a 	LEFT JOIN ( select userid,sum(pp_yongjin) pp_yongjin from buy_video 	where Dele = 1 	GROUP BY userid ) t on a.userid = t.userid 	where a.flag = 1 	GROUP BY a.pid ) m2 on m1.userid = m2.pid LEFT JOIN ( SELECT pid,count(1) js from `user` where flag = 1 GROUP BY pid ) m3 on m1.userid = m3.pid [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001082s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001114s ]
+

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <include file="Tool/top" />
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/css/app.css" />
+    <link href="__PUBLIC__/css/mui.picker.css" rel="stylesheet" />
+    <link href="__PUBLIC__/css/mui.poppicker.css" rel="stylesheet" />
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">VIP管理</h1>
+</header>
+<include file="Tool/footer" />
+<div class="mui-content">
+    <form id="form1" name="form1" method="post" class="">
+    <div class="mui-content">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <!--<a class="mui-navigate-right" href="#">产品</a>-->
+                <a class="mui-navigate-right" href="#">
+                    <img class="mui-media-object mui-pull-left head-img" id="head-img" src="__PUBLIC__/<?php if(empty($user[0]['headimg'])) {
+                    echo 'images/logo.png';
+                    } else {
+                        echo 'upload/'.$user[0]['headimg'];
+                    }
+                    ?>">
+                    <div class="mui-media-body">
+                        钱包余额：<span class="mui-badge mui-badge-warning "><?=number_format($xjnum,2)?></span>
+                        <p class='mui-ellipsis'>
+                            <?php if($user['vip_end'] == '0') {?>
+                            普通会员
+                            <?php } else {?>
+                            vip有效期至：<?=$user['vip_end']?>
+                            <?php }?>
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <ul class="mui-table-view mui-table-view-radio">
+        <li class="mui-table-view-cell mui-selected" id="1">
+            <a class="mui-navigate-right">
+                <span class="mui-badge mui-badge-warning">69.00</span>
+                时长：1个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell" id="3">
+            <a class="mui-navigate-right">
+                <span class="mui-badge mui-badge-warning">149.00</span>
+                时长：3个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell " id="6">
+            <a class="mui-navigate-right">
+                <span class="mui-badge mui-badge-warning">249.00</span>
+                时长：6个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell" id="12">
+            <a class="mui-navigate-right">
+                <span class="mui-badge mui-badge-warning" >449.00</span>
+                时长：12个月
+            </a>
+        </li>
+        <li class="mui-table-view-cell" id="24">
+            <a class="mui-navigate-right">
+                <span class="mui-badge mui-badge-warning" >699.00</span>
+                时长：24个月
+            </a>
+        </li>
+    </ul>
+    <div class="mui-content-padded">
+        <p id="info"></p>
+    </div>
+    <div class="mui-card-footer">
+        <button id='showUserPicker' type="button" class="mui-btn mui-btn-success mui-btn-block">
+            确 认 购 买
+        </button>
+        <input type="hidden" id="pickval" name="pickval">
+        <input type="hidden" id="lev" name="lev">
+    </div>
+    </form>
+</div>
+<script src="__PUBLIC__/js/mui.picker.js"></script>
+<script src="__PUBLIC__/js/mui.poppicker.js"></script>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+    var selectid = "1";
+    var info = document.getElementById("info");
+    document.querySelector('.mui-table-view.mui-table-view-radio').addEventListener('selected',function(e){
+        //selectid = e.detail.el.id;
+        document.getElementById('lev').value=e.detail.el.id;
+    });
+
+    (function($, doc) {
+        $.init();
+        $.ready(function() {
+            //普通示例
+            var userPicker = new $.PopPicker();
+
+            var ua = navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                userPicker.setData([
+                    {
+                        value: 1004,
+                        text: '微信扫码支付'
+                    }]);
+            } else {
+                userPicker.setData([
+                    {
+                        value: 1006,
+                        text: '支付宝支付'
+                    },{
+                        value: 1007,
+                        text: '微信支付'
+                    },{
+                        value: 1008,
+                        text: 'QQ钱包支付'
+                    }]);
+            }
+
+            var showUserPickerButton = doc.getElementById('showUserPicker');
+            var userResult = doc.getElementById('userResult');
+            showUserPickerButton.addEventListener('tap', function(event) {
+                userPicker.show(function(items) {
+                    document.getElementById('pickval').value=JSON.stringify(items[0].value);
+                    form1.action = "__MODULE__/My/new_inpost";
+                    form1.submit();
+                });
+            }, false);
+        });
+    })(mui, document);
+
+    function onsub() {
+
+    }
+
+</script>
+</body>
+</html>

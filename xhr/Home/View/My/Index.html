@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <include file="Tool/top" />
+</head>
+<body>
+<header class="mui-bar mui-bar-nav">
+    <!--<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>-->
+    <h1 class="mui-title">个人中心</h1>
+</header>
+<include file="Tool/footer" />
+
+<div class="mui-content">
+    <div class="mui-content"  style="margin-top: -13px">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell mui-collapse">
+                <!--<a class="mui-navigate-right" href="#">产品</a>-->
+                <a class="mui-navigate-right" href="#">
+                    <img class="mui-media-object mui-pull-left head-img"  style="height: 60px;max-width: 60px"  id="head-img" src="__PUBLIC__/<?php if(empty($user[0]['headimg'])) {
+                    echo 'images/logo.png';
+                    } else {
+                        echo 'upload/'.$user[0]['headimg'];
+                    }
+                    ?>">
+                    <div class="mui-media-body" style="margin-top: 5px">
+                        <span style="font-size: 17px;"><?=$user[0]['user']?></span>
+                        <?php if($sfkqtj == 'Y') { ?>
+                        　<span style="color: #9b9b9b">|</span>　钱包余额：<span style="padding-left: 10px;padding-right: 10px" class="mui-badge mui-badge-warning "><?=number_format($xjnum,2)?></span>
+                        <?php } ?>
+                        <p class='mui-ellipsis' style="margin-top: 12px">
+                            <?php if($user[0]['vip_end'] == '0') {?>
+                            普通会员
+                            <?php } else {?>
+                            vip有效期至：<?=$user[0]['vip_end']?>
+                            <?php }?>
+                        </p>
+                    </div>
+                </a>
+                <ul class="mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell"><a class="mui-navigate-right" href="__MODULE__/My/jbxxxg">修改资料</a>
+                    </li>
+                    <li class="mui-table-view-cell"><a class="mui-navigate-right" href="__MODULE__/My/xgmm">修改密码</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <?php if($sfkqtj == 'Y') { ?>
+    <div class="mui-content" style="margin-bottom: 10px;">
+        <ul class="mui-table-view">
+            <!--<li class="mui-table-view-cell mui-collapse">
+                <a class="mui-navigate-right">
+                    账户充值
+                </a>
+                <ul class="mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell"><a class="mui-navigate-right" href="__MODULE__/My/rmbcz/type/1">RMB充值</a>
+                    </li>
+                    <li class="mui-table-view-cell"><a class="mui-navigate-right" href="__MODULE__/My/czlist">充值记录</a>
+                    </li>
+                </ul>
+            </li>-->
+            <li class="mui-table-view-cell mui-collapse">
+                <!--<a class="mui-navigate-right" href="#">产品</a>-->
+                <a class="mui-navigate-right">
+                    用户提现
+                </a>
+                <ul class="mui-table-view mui-table-view-chevron">
+                    <li class="mui-table-view-cell"><a class="mui-navigate-right" href="__MODULE__/My/rmbtx">RMB提现</a>
+                    </li>
+                    <li class="mui-table-view-cell"><a class="mui-navigate-right" href="__MODULE__/My/txlist">提现记录</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="mui-table-view-cell" style="vertical-align: middle">
+                <a class="mui-navigate-right" href="__MODULE__/My/join">
+                    <!--<img class=" mui-pull-left" style="width: 35px; padding-right: 10px" src="__PUBLIC__/images/1111.png">-->
+                    <span class="mui-badge mui-badge-danger"><?=$js?></span>
+                    我的邀请
+                </a>
+            </li>
+            <li class="mui-table-view-cell" style="vertical-align: middle">
+                <a class="mui-navigate-right" href="__MODULE__/My/reg_invitation">
+                    <!--<img class=" mui-pull-left" style="width: 35px; padding-right: 10px" src="__PUBLIC__/images/1111.png">-->
+
+                    邀请链接
+                </a>
+            </li>
+        </ul>
+    </div>
+    <?php } ?>
+    <div class="mui-content" style="margin-bottom: 10px;">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell">
+                <a  class="mui-navigate-right"href="__MODULE__/My/buy_list">会员购买记录 <i class="mui-pull-right update"></i></a>
+            </li>
+        </ul>
+    </div>
+    <div class="mui-content" style="margin-bottom: 30px;">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell">
+                <a  class="mui-navigate-right"href="__MODULE__/My/liuyan">平台留言 <i class="mui-pull-right update"></i></a>
+            </li>
+        </ul>
+    </div>
+    <!--<div class="mui-content" style="margin-bottom: 30px;">
+        <ul class="mui-table-view mui-table-view-chevron">
+            <li class="mui-table-view-cell">
+                <a  class="mui-navigate-right"href="__MODULE__/My/helppai">帮助中心 <i class="mui-pull-right update">V1.1.0</i></a>
+            </li>
+        </ul>
+    </div>-->
+
+
+
+    <div class="mui-content">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell" style="text-align: center;">
+                <a href="__MODULE__/User/loginout">退出登录</a>
+            </li>
+        </ul>
+        <!--<button type="button" class="mui-btn mui-btn-danger mui-btn-block">Block button</button>-->
+    </div>
+
+</div>
+
+
+
+
+
+</body>
+<script>
+    mui.init({
+        swipeBack:true //启用右滑关闭功能
+    });
+</script>
+</html>
